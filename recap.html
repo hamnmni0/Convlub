@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConvLUB 1st Edition</title>
+  <meta name="description" content="Recap of ConvLUB 1st Edition: Conversation Club.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="recap">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ConvLUB home">
+        <img src="images/convlub-logo.jpeg" alt="ConvLUB logo">
+        <div class="brand-copy">
+          <strong>ConvLUB</strong>
+          <span data-i18n="tagline">Meet. Connect. Belong.</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="events.html" data-i18n="nav.events">Events</a>
+          <a href="upcoming.html" data-i18n="nav.upcoming">Upcoming</a>
+          <a href="recap.html" data-i18n="nav.firstEdition">First Edition</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="https://www.instagram.com/convlub/" target="_blank" rel="noreferrer" data-i18n="nav.instagram">Instagram ↗</a>
+        </nav>
+
+        <div class="toolbar">
+          <div class="language-toggle" aria-label="Language switcher">
+            <button type="button" class="language-button" data-language="en">EN</button>
+            <button type="button" class="language-button" data-language="pl">PL</button>
+          </div>
+          <button type="button" class="theme-toggle" data-i18n="theme.toggle">Dark mode</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-layout">
+      <section class="event-hero">
+        <div class="event-hero-copy">
+          <p class="eyebrow" data-i18n="recap.eyebrow">ConvLUB 1st Edition</p>
+          <h1 data-i18n="recap.title">Conversation Club</h1>
+          <p class="lead" data-i18n="recap.lead">
+            The first ConvLUB Conversation Club brought together a diverse group of people in a welcoming atmosphere built around conversation and connection.
+          </p>
+          <p data-i18n="recap.body1">
+            The event was filled with engaging conversations, cultural exchange, and a welcoming atmosphere where strangers connected and shared experiences.
+          </p>
+          <p data-i18n="recap.body2">
+            A great start to building a strong, inclusive community, with many more to come.
+          </p>
+        </div>
+
+        <img class="event-hero-image" src="images/conversation-club/photo-3.jpeg" alt="Conversation Club discussion circle" data-lightbox>
+      </section>
+
+      <section class="photo-band">
+        <img src="images/conversation-club/photo-1.jpeg" alt="ConvLUB founder smiling at the first edition" data-lightbox>
+        <img src="images/conversation-club/photo-4.jpeg" alt="Conversation Club group photo" data-lightbox>
+        <img src="images/conversation-club/photo-6.jpeg" alt="ConvLUB founder speaking to participants" data-lightbox>
+      </section>
+
+      <section class="closing-panel">
+        <div>
+          <p class="eyebrow" data-i18n="recap.noteLabel">What stayed with us</p>
+          <h2 data-i18n="recap.noteTitle">A thoughtful first step for the ConvLUB story.</h2>
+          <p data-i18n="recap.noteBody">
+            More than an opening edition, Conversation Club established the tone of ConvLUB: warm, international, personal, and open to genuine exchange.
+          </p>
+        </div>
+        <a class="button button-secondary" href="gallery.html" data-i18n="recap.galleryLink">View the full gallery</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.copy">ConvLUB builds spaces where people meet, connect, and belong.</p>
+    </footer>
+  </div>
+
+  <div class="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close image viewer">×</button>
+    <img src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

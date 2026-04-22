@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConvLUB Events</title>
+  <meta name="description" content="Browse the ConvLUB archive of past events, including Conversation Club and Lublin's Got Talent.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="events">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ConvLUB home">
+        <img src="images/convlub-logo.jpeg" alt="ConvLUB logo">
+        <div class="brand-copy">
+          <strong>ConvLUB</strong>
+          <span data-i18n="tagline">Meet. Connect. Belong.</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="events.html" data-i18n="nav.events">Events</a>
+          <a href="upcoming.html" data-i18n="nav.upcoming">Upcoming</a>
+          <a href="recap.html" data-i18n="nav.firstEdition">First Edition</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="https://www.instagram.com/convlub/" target="_blank" rel="noreferrer" data-i18n="nav.instagram">Instagram ↗</a>
+        </nav>
+
+        <div class="toolbar">
+          <div class="language-toggle" aria-label="Language switcher">
+            <button type="button" class="language-button" data-language="en">EN</button>
+            <button type="button" class="language-button" data-language="pl">PL</button>
+          </div>
+          <button type="button" class="theme-toggle" data-i18n="theme.toggle">Dark mode</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-layout">
+      <section class="page-hero">
+        <p class="eyebrow" data-i18n="events.eyebrow">Past editions</p>
+        <h1 data-i18n="events.title">A growing archive of ConvLUB nights.</h1>
+        <p class="lead" data-i18n="events.lead">
+          Each edition has its own mood, photos, and story. This page stays focused and curated, while selected highlights can still live elsewhere on the site.
+        </p>
+      </section>
+
+      <section class="event-list">
+        <article class="event-card">
+          <img src="images/conversation-club/photo-4.jpeg" alt="ConvLUB 1st Edition group photo">
+          <div class="event-card-copy">
+            <p class="eyebrow" data-i18n="events.firstLabel">Edition 01</p>
+            <h2 data-i18n="events.firstTitle">Conversation Club</h2>
+            <p data-i18n="events.firstBody">
+              A warm evening of dialogue, cultural exchange, and new connection in a welcoming international atmosphere.
+            </p>
+            <a class="button button-secondary" href="recap.html" data-i18n="events.firstLink">Open first edition</a>
+          </div>
+        </article>
+
+        <article class="event-card">
+          <img src="images/lublins-got-talent/photo-1.jpeg" alt="Lublin's Got Talent crowd">
+          <div class="event-card-copy">
+            <p class="eyebrow" data-i18n="events.secondLabel">Edition 02</p>
+            <h2 data-i18n="events.secondTitle">Lublin's Got Talent</h2>
+            <p data-i18n="events.secondBody">
+              A night full of music, fun, and unforgettable moments. Whether singing at karaoke or cheering on the crowd, the energy was all about joy and meeting amazing people.
+            </p>
+            <a class="button button-secondary" href="second-edition.html" data-i18n="events.secondLink">Open second edition</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.copy">ConvLUB builds spaces where people meet, connect, and belong.</p>
+    </footer>
+  </div>
+
+  <div class="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close image viewer">×</button>
+    <img src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+{
+  "settings": {
+    "siteName": "ConvLub",
+    "featuredEventId": "dinner-party",
+    "countdownTarget": "2026-05-08T19:00:00+03:00"
+  },
+  "events": [
+    {
+      "id": "dinner-party",
+      "name": "ConvLub Dinner Party",
+      "description": "A flagship dinner for curated introductions, warm hospitality, and meaningful conversations around a shared table.",
+      "location": "Basma Mezze & Grill, Kuwait City",
+      "dateLabel": "May 8, 2026",
+      "timeLabel": "7:00 PM AST",
+      "seatsLeft": 34,
+      "tags": ["Upcoming", "Dinner", "Featured"]
+    },
+    {
+      "id": "creative-supper",
+      "name": "Creative Supper Circle",
+      "description": "A smaller table for designers, founders, and operators who want intentional networking rather than open mingling.",
+      "location": "Noura Hall, Salmiya",
+      "dateLabel": "May 21, 2026",
+      "timeLabel": "8:00 PM AST",
+      "seatsLeft": 18,
+      "tags": ["Upcoming", "Networking", "Salon"]
+    },
+    {
+      "id": "founder-breakfast",
+      "name": "Founder Breakfast Briefing",
+      "description": "A breakfast format for tighter conversations, short updates, and invite-led attendance.",
+      "location": "The Yard Lounge, Kuwait City",
+      "dateLabel": "June 2, 2026",
+      "timeLabel": "9:30 AM AST",
+      "seatsLeft": 22,
+      "tags": ["Upcoming", "Breakfast", "Invite"]
+    }
+  ],
+  "pastEvents": [
+    {
+      "id": "ramadan-reflection",
+      "name": "Ramadan Reflection Forum",
+      "description": "A community-focused evening with storytelling, iftar, and guided small-group conversations.",
+      "attendance": 112,
+      "partner": "Heritage Kitchen",
+      "dateLabel": "March 21, 2026"
+    },
+    {
+      "id": "winter-salon",
+      "name": "Winter Founder Salon",
+      "description": "A private dinner for startup operators with tasting menu service and moderated discussion.",
+      "attendance": 55,
+      "partner": "Safa Courtyard",
+      "dateLabel": "January 14, 2026"
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "mezze-platter",
+      "name": "Signature Mezze Platter",
+      "description": "Hummus, muhammara, vine leaves, and warm flatbread.",
+      "price": 8.5
+    },
+    {
+      "id": "mixed-grill",
+      "name": "Mixed Grill Selection",
+      "description": "Chicken taouk, lamb kofta, grilled vegetables, and saffron rice.",
+      "price": 14
+    },
+    {
+      "id": "rose-cheesecake",
+      "name": "Rose Cheesecake",
+      "description": "Rosewater cheesecake finished with pistachio crumble.",
+      "price": 6.5
+    },
+    {
+      "id": "date-cooler",
+      "name": "Sparkling Date Cooler",
+      "description": "A chilled date, mint, and citrus mocktail.",
+      "price": 4.25
+    }
+  ],
+  "registrations": [
+    {
+      "id": "seed-1",
+      "createdAt": "2026-04-19T10:15:00.000Z",
+      "name": "Noura Al Sabah",
+      "email": "noura@studionorth.com",
+      "phone": "+965 9999 1111",
+      "company": "Studio North",
+      "eventId": "dinner-party",
+      "ticketType": "Hosted Seat",
+      "notes": "No nuts",
+      "menuIds": ["mezze-platter", "date-cooler"]
+    },
+    {
+      "id": "seed-2",
+      "createdAt": "2026-04-20T08:45:00.000Z",
+      "name": "Ahmad Darwish",
+      "email": "ahmad@ventureio.com",
+      "phone": "+965 9555 3333",
+      "company": "Venture IO",
+      "eventId": "creative-supper",
+      "ticketType": "Member Ticket",
+      "notes": "Vegetarian",
+      "menuIds": ["rose-cheesecake"]
+    }
+  ]
+}

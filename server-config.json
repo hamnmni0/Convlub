@@ -1,0 +1,7 @@
+{
+  "adminEmail": "admin@convlub.local",
+  "adminPassword": "ChangeMe123!",
+  "passwordSalt": "9f6e09d0b0fc68585733443cc6a7822a",
+  "passwordHash": "2689d2b58cb8b7d3f0f6da6c451c9f25179cf664fd61c84a057e4f19e6eaf0405ce8331533e088af84d34b72a2ebfd0f3b8d44485b40199f53d35709c7af0ce0",
+  "sessionSecret": "d21a3e57d67bc816bd0b1b6f844649cf11bde3736f915e8b4d3afe2531151598"
+}

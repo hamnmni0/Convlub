@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About ConvLUB</title>
+  <meta name="description" content="Learn about ConvLUB, its mission, and how it connects cultures through events in Lublin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="about">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ConvLUB home">
+        <img src="images/convlub-logo.jpeg" alt="ConvLUB logo">
+        <div class="brand-copy">
+          <strong>ConvLUB</strong>
+          <span data-i18n="tagline">Meet. Connect. Belong.</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="events.html" data-i18n="nav.events">Events</a>
+          <a href="upcoming.html" data-i18n="nav.upcoming">Upcoming</a>
+          <a href="recap.html" data-i18n="nav.firstEdition">First Edition</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="https://www.instagram.com/convlub/" target="_blank" rel="noreferrer" data-i18n="nav.instagram">Instagram ↗</a>
+        </nav>
+
+        <div class="toolbar">
+          <div class="language-toggle" aria-label="Language switcher">
+            <button type="button" class="language-button" data-language="en">EN</button>
+            <button type="button" class="language-button" data-language="pl">PL</button>
+          </div>
+          <button type="button" class="theme-toggle" data-i18n="theme.toggle">Dark mode</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-layout">
+      <section class="page-hero">
+        <p class="eyebrow" data-i18n="about.eyebrow">About ConvLUB</p>
+        <h1 data-i18n="about.title">A community space built around belonging, exchange, and local connection.</h1>
+        <p class="lead" data-i18n="about.lead">
+          ConvLUB was founded on the belief that together we are stronger. It is a space designed for people to meet, connect, and feel like they truly belong.
+        </p>
+      </section>
+
+      <section class="content-grid">
+        <article class="text-panel">
+          <h2 data-i18n="about.section1Title">What ConvLUB stands for</h2>
+          <p data-i18n="about.section1Body1">
+            By hosting international-style events in collaboration with local businesses, ConvLUB brings people from all walks of life together while also bridging cultures.
+          </p>
+          <p data-i18n="about.section1Body2">
+            It is especially focused on helping the international community feel closer to Polish culture, while giving local participants the chance to meet new perspectives, stories, and traditions in a natural way.
+          </p>
+        </article>
+
+        <article class="text-panel">
+          <h2 data-i18n="about.section2Title">Why it matters in Lublin</h2>
+          <p data-i18n="about.section2Body1">
+            Cities grow stronger when people feel seen, welcomed, and invited into shared experiences. ConvLUB is built around that idea: not only events, but environments where conversation feels easy and strangers can turn into community.
+          </p>
+          <p data-i18n="about.section2Body2">
+            Every edition is designed to feel warm, social, and open, whether the evening is centered on conversation, music, talent, or simple moments of connection.
+          </p>
+        </article>
+
+        <article class="text-panel">
+          <h2 data-i18n="about.section3Title">How ConvLUB grows</h2>
+          <p data-i18n="about.section3Body1">
+            The project grows through collaboration, recurring editions, and a lasting archive of what each event felt like. The goal is not only to host memorable nights, but to document them and keep building a story people want to return to.
+          </p>
+          <p data-i18n="about.section3Body2">
+            ConvLUB is where different worlds meet, share, and grow together.
+          </p>
+        </article>
+
+        <figure class="about-photo-stack">
+          <img src="images/lublins-got-talent/photo-9.jpeg" alt="ConvLUB community gathering" data-lightbox>
+          <img src="images/conversation-club/photo-4.jpeg" alt="Conversation Club participants seated together" data-lightbox>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.copy">ConvLUB builds spaces where people meet, connect, and belong.</p>
+    </footer>
+  </div>
+
+  <div class="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close image viewer">×</button>
+    <img src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

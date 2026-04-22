@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConvLUB | Meet. Connect. Belong.</title>
+  <meta name="description" content="ConvLUB is a cultural community in Lublin creating events that help people meet, connect, and belong.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ConvLUB home">
+        <img src="images/convlub-logo.jpeg" alt="ConvLUB logo">
+        <div class="brand-copy">
+          <strong>ConvLUB</strong>
+          <span data-i18n="tagline">Meet. Connect. Belong.</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="events.html" data-i18n="nav.events">Events</a>
+          <a href="upcoming.html" data-i18n="nav.upcoming">Upcoming</a>
+          <a href="recap.html" data-i18n="nav.firstEdition">First Edition</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="https://www.instagram.com/convlub/" target="_blank" rel="noreferrer" data-i18n="nav.instagram">Instagram ↗</a>
+        </nav>
+
+        <div class="toolbar">
+          <div class="language-toggle" aria-label="Language switcher">
+            <button type="button" class="language-button" data-language="en">EN</button>
+            <button type="button" class="language-button" data-language="pl">PL</button>
+          </div>
+          <button type="button" class="theme-toggle" data-i18n="theme.toggle">Dark mode</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-home">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="home.eyebrow">ConvLUB archive</p>
+          <h1 data-i18n="home.title">A clean home for community, culture, and shared memory.</h1>
+          <p class="lead" data-i18n="home.lead">
+            ConvLUB was founded on the belief that together we are stronger. It is a space designed for people to meet, connect, and feel like they truly belong.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="events.html" data-i18n="home.ctaPrimary">Browse events</a>
+            <a class="button button-secondary" href="about.html" data-i18n="home.ctaSecondary">Read about ConvLUB</a>
+          </div>
+        </div>
+
+        <figure class="hero-media feature-photo">
+          <img src="images/lublins-got-talent/photo-9.jpeg" alt="ConvLUB community gathering">
+          <figcaption>
+            <span class="eyebrow" data-i18n="home.coverLabel">Latest atmosphere</span>
+            <strong data-i18n="home.coverTitle">A room full of people, music, and shared moments.</strong>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="upcoming-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="upcoming.label">Upcoming Events</p>
+          <h2 data-i18n="upcoming.title">What's coming next at ConvLUB.</h2>
+        </div>
+
+        <article class="feature-card upcoming-card">
+          <p class="lead" data-i18n="upcoming.body">
+            Future editions will appear here once they are officially announced.
+          </p>
+          <p class="upcoming-note" data-i18n="upcoming.note">
+            We are preparing the next ConvLUB experience. Check back soon for the next edition, details, and announcement.
+          </p>
+          <a class="text-link" href="upcoming.html" data-i18n="upcoming.link">Open upcoming page</a>
+        </article>
+      </section>
+
+      <section class="section-grid section-grid-home">
+        <article class="feature-card">
+          <p class="eyebrow" data-i18n="home.storyLabel">Featured story</p>
+          <h2 data-i18n="home.storyTitle">ConvLUB 1st Edition</h2>
+          <p data-i18n="home.storyBody">
+            Conversation Club brought people together for a welcoming evening of dialogue, cultural exchange, and genuine connection.
+          </p>
+          <a class="text-link" href="recap.html" data-i18n="home.storyLink">Read the recap</a>
+        </article>
+
+        <article class="feature-card">
+          <p class="eyebrow" data-i18n="home.secondLabel">New edition</p>
+          <h2 data-i18n="home.secondTitle">Lublin's Got Talent</h2>
+          <p data-i18n="home.secondBody">
+            A night full of music, fun, and unforgettable moments where karaoke, cheering, and new friendships shaped the room.
+          </p>
+          <a class="text-link" href="second-edition.html" data-i18n="home.secondLink">See the second edition</a>
+        </article>
+      </section>
+
+      <section class="overview">
+        <div class="card-grid">
+          <a class="panel-card" href="about.html">
+            <span class="eyebrow" data-i18n="home.aboutCardLabel">About</span>
+            <h3 data-i18n="home.aboutCardTitle">Why ConvLUB exists</h3>
+            <p data-i18n="home.aboutCardBody">The mission, the philosophy, and the role of cultural exchange in Lublin.</p>
+          </a>
+
+          <a class="panel-card" href="events.html">
+            <span class="eyebrow" data-i18n="home.eventsCardLabel">Events</span>
+            <h3 data-i18n="home.eventsCardTitle">Past event archive</h3>
+            <p data-i18n="home.eventsCardBody">A growing archive of editions, each with its own recap, mood, and photo story.</p>
+          </a>
+
+          <a class="panel-card" href="recap.html">
+            <span class="eyebrow" data-i18n="home.recapCardLabel">Recap</span>
+            <h3 data-i18n="home.recapCardTitle">Conversation Club</h3>
+            <p data-i18n="home.recapCardBody">The first ConvLUB edition, documented as a warm and thoughtful reflection.</p>
+          </a>
+
+          <a class="panel-card" href="gallery.html">
+            <span class="eyebrow" data-i18n="home.galleryCardLabel">Gallery</span>
+            <h3 data-i18n="home.galleryCardTitle">Photo stories</h3>
+            <p data-i18n="home.galleryCardBody">A cleaner visual archive with selected moments from both ConvLUB editions.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.copy">ConvLUB builds spaces where people meet, connect, and belong.</p>
+    </footer>
+  </div>
+
+  <div class="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close image viewer">×</button>
+    <img src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConvLUB Gallery</title>
+  <meta name="description" content="Photo gallery from ConvLUB events.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="gallery">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ConvLUB home">
+        <img src="images/convlub-logo.jpeg" alt="ConvLUB logo">
+        <div class="brand-copy">
+          <strong>ConvLUB</strong>
+          <span data-i18n="tagline">Meet. Connect. Belong.</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="header-actions">
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="events.html" data-i18n="nav.events">Events</a>
+          <a href="upcoming.html" data-i18n="nav.upcoming">Upcoming</a>
+          <a href="recap.html" data-i18n="nav.firstEdition">First Edition</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="https://www.instagram.com/convlub/" target="_blank" rel="noreferrer" data-i18n="nav.instagram">Instagram ↗</a>
+        </nav>
+
+        <div class="toolbar">
+          <div class="language-toggle" aria-label="Language switcher">
+            <button type="button" class="language-button" data-language="en">EN</button>
+            <button type="button" class="language-button" data-language="pl">PL</button>
+          </div>
+          <button type="button" class="theme-toggle" data-i18n="theme.toggle">Dark mode</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-layout">
+      <section class="page-hero">
+        <p class="eyebrow" data-i18n="gallery.eyebrow">Gallery</p>
+        <h1 data-i18n="gallery.title">A visual archive of ConvLUB moments.</h1>
+        <p class="lead" data-i18n="gallery.lead">
+          Click any image to open the full photo. The gallery is now presented as a clean record of the community and each edition's atmosphere.
+        </p>
+      </section>
+
+      <section class="gallery-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="gallery.firstLabel">Edition 01</p>
+          <h2 data-i18n="gallery.firstTitle">Conversation Club</h2>
+        </div>
+        <div class="gallery-grid">
+          <img src="images/conversation-club/photo-1.jpeg" alt="Conversation Club photo 1" data-lightbox>
+          <img src="images/conversation-club/photo-2.jpeg" alt="Conversation Club photo 2" data-lightbox>
+          <img src="images/conversation-club/photo-3.jpeg" alt="Conversation Club photo 3" data-lightbox>
+          <img src="images/conversation-club/photo-4.jpeg" alt="Conversation Club photo 4" data-lightbox>
+          <img src="images/conversation-club/photo-5.jpeg" alt="Conversation Club photo 5" data-lightbox>
+          <img src="images/conversation-club/photo-6.jpeg" alt="Conversation Club photo 6" data-lightbox>
+          <img src="images/conversation-club/photo-7.jpeg" alt="Conversation Club photo 7" data-lightbox>
+          <img src="images/conversation-club/photo-8.jpeg" alt="Conversation Club photo 8" data-lightbox>
+          <img src="images/conversation-club/photo-9.jpeg" alt="Conversation Club photo 9" data-lightbox>
+          <img src="images/conversation-club/photo-10.jpeg" alt="Conversation Club photo 10" data-lightbox>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="gallery.secondLabel">Edition 02</p>
+          <h2 data-i18n="gallery.secondTitle">Lublin's Got Talent</h2>
+        </div>
+        <div class="gallery-grid">
+          <img src="images/lublins-got-talent/photo-1.jpeg" alt="Lublin's Got Talent photo 1" data-lightbox>
+          <img src="images/lublins-got-talent/photo-2.jpeg" alt="Lublin's Got Talent photo 2" data-lightbox>
+          <img src="images/lublins-got-talent/photo-4.jpeg" alt="Lublin's Got Talent photo 4" data-lightbox>
+          <img src="images/lublins-got-talent/photo-6.jpeg" alt="Lublin's Got Talent photo 6" data-lightbox>
+          <img src="images/lublins-got-talent/photo-7.jpeg" alt="Lublin's Got Talent photo 7" data-lightbox>
+          <img src="images/lublins-got-talent/photo-9.jpeg" alt="Lublin's Got Talent photo 9" data-lightbox>
+          <img src="images/lublins-got-talent/photo-10.jpeg" alt="Lublin's Got Talent photo 10" data-lightbox>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.copy">ConvLUB builds spaces where people meet, connect, and belong.</p>
+    </footer>
+  </div>
+
+  <div class="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close image viewer">×</button>
+    <img src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
