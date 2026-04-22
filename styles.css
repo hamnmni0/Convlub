@@ -661,6 +661,25 @@ body[data-page="events"] .event-card img {
   }
 }
 
+.mobile-instagram {
+  display: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+
+.mobile-instagram svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 @media (max-width: 760px) {
   .site-header {
     position: relative;
@@ -670,6 +689,11 @@ body[data-page="events"] .event-card img {
   }
 
   .menu-toggle {
+    display: inline-flex;
+    order: 2;
+  }
+
+  .mobile-instagram {
     display: inline-flex;
     order: 2;
   }
@@ -711,7 +735,7 @@ body[data-page="events"] .event-card img {
 
   .brand {
     flex: 1 1 auto;
-    max-width: calc(100% - 64px);
+    max-width: calc(100% - 120px);
     align-items: flex-start;
   }
 
@@ -766,6 +790,12 @@ body[data-page="events"] .event-card img {
   }
 
   .menu-toggle {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .mobile-instagram {
     width: 44px;
     height: 44px;
     border-radius: 14px;
