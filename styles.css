@@ -407,6 +407,14 @@ main {
   border-top: 1px solid var(--border);
 }
 
+.upcoming-date {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+
 .card-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
