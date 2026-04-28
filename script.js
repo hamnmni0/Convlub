@@ -24,12 +24,11 @@ const translations = {
     "upcoming.label": "Upcoming Event",
     "upcoming.title": "ConvLUB 3rd Edition: The Optimist x ConvLUB",
     "upcoming.body": "Join us for a night where conversations flow, cultures connect, and new friendships begin.",
-    "upcoming.date": "May 8, 2026",
-    "upcoming.note": "Expect a fun mix of language exchange and trivia in the cozy atmosphere of The Optimist, with coffee, matcha, cakes, and space for genuine connection. Come curious, leave connected.",
+    "upcoming.date": "May 1, 2026",
+    "upcoming.time": "17:00",
+    "upcoming.note": "Expect a relaxed trivia night with language exchange, coffee, matcha, cakes, and room for genuine conversation in the cozy atmosphere of The Optimist. Come curious, leave connected.",
     "upcoming.cardLabel": "Edition 03",
-    "upcoming.cardTitle": "Language exchange, trivia, and new friendships",
-    "upcoming.previewLabel": "Event preview",
-    "upcoming.previewTitle": "A first look at the mood of the evening.",
+    "upcoming.cardTitle": "Trivia night, language exchange, and new friendships",
     "upcoming.link": "Open event page",
     "home.secondLabel": "New edition",
     "home.secondTitle": "Lublin's Got Talent",
@@ -122,12 +121,11 @@ const translations = {
     "upcoming.label": "Nadchodz\u0105ce wydarzenie",
     "upcoming.title": "ConvLUB 3. edycja: The Optimist x ConvLUB",
     "upcoming.body": "Do\u0142\u0105cz do wieczoru, podczas kt\u00f3rego rozmowy p\u0142yn\u0105 swobodnie, kultury si\u0119 spotykaj\u0105, a nowe znajomo\u015bci zaczynaj\u0105 si\u0119 naturalnie.",
-    "upcoming.date": "8 maja 2026",
-    "upcoming.note": "Czeka na Ciebie po\u0142\u0105czenie language exchange i trivia w przytulnej atmosferze The Optimist, z kaw\u0105, match\u0105, ciastami i przestrzeni\u0105 do prawdziwego kontaktu. Przyjd\u017a z ciekawo\u015bci\u0105, wyjd\u017a z nowymi relacjami.",
+    "upcoming.date": "1 maja 2026",
+    "upcoming.time": "17:00",
+    "upcoming.note": "Czeka na Ciebie swobodny wiecz\u00f3r trivia i language exchange w przytulnej atmosferze The Optimist, z kaw\u0105, match\u0105, ciastami i przestrzeni\u0105 do prawdziwych rozm\u00f3w. Przyjd\u017a z ciekawo\u015bci\u0105, wyjd\u017a z nowymi relacjami.",
     "upcoming.cardLabel": "Edycja 03",
-    "upcoming.cardTitle": "Language exchange, trivia i nowe znajomo\u015bci",
-    "upcoming.previewLabel": "Zapowied\u017a wydarzenia",
-    "upcoming.previewTitle": "Pierwszy klimat tego wieczoru.",
+    "upcoming.cardTitle": "Trivia night, language exchange i nowe znajomo\u015bci",
     "upcoming.link": "Otw\u00f3rz stron\u0119 wydarzenia",
     "home.secondLabel": "Nowa edycja",
     "home.secondTitle": "Lublin's Got Talent",
@@ -332,27 +330,6 @@ function setupLightbox() {
   });
 }
 
-function setupVideoPreview() {
-  document.querySelectorAll(".video-feature").forEach((card) => {
-    const video = card.querySelector(".event-video");
-    const button = card.querySelector(".video-play-button");
-
-    if (!video || !button) return;
-
-    const syncState = () => {
-      card.classList.toggle("is-playing", !video.paused && !video.ended);
-    };
-
-    button.addEventListener("click", () => {
-      video.play();
-    });
-
-    video.addEventListener("play", syncState);
-    video.addEventListener("pause", syncState);
-    video.addEventListener("ended", syncState);
-  });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   const storedTheme = localStorage.getItem("convlub-theme") || "light";
   const storedLanguage = localStorage.getItem("convlub-language") || "en";
@@ -364,5 +341,4 @@ document.addEventListener("DOMContentLoaded", () => {
   setupActiveNav();
   setupMenu();
   setupLightbox();
-  setupVideoPreview();
 });

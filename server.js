@@ -25,7 +25,7 @@ const defaultStore = {
       description:
         "A flagship dinner for curated introductions, warm hospitality, and meaningful conversations around a shared table.",
       location: "Basma Mezze & Grill, Kuwait City",
-      dateLabel: "May 8, 2026",
+      dateLabel: "May 1, 2026",
       timeLabel: "7:00 PM AST",
       seatsLeft: 34,
       tags: ["Upcoming", "Dinner", "Featured"],
