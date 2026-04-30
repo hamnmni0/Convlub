@@ -46,6 +46,13 @@ body {
   color: var(--text);
 }
 
+body.dark {
+  background:
+    radial-gradient(circle at top left, rgba(240, 108, 119, 0.045), transparent 22rem),
+    radial-gradient(circle at bottom right, rgba(240, 108, 119, 0.035), transparent 24rem),
+    var(--bg);
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -455,6 +462,12 @@ main {
   box-shadow: 0 12px 30px rgba(79, 33, 41, 0.04);
 }
 
+body.dark .section-grid-home .feature-card {
+  background: linear-gradient(180deg, rgba(43, 30, 35, 0.96), rgba(34, 23, 28, 0.94));
+  border-color: rgba(243, 220, 214, 0.1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+}
+
 .section-grid-home {
   gap: 1.15rem 1.4rem;
 }
@@ -485,6 +498,12 @@ main {
   transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
+body.dark .overview .panel-card {
+  background: linear-gradient(180deg, rgba(41, 29, 33, 0.95), rgba(31, 21, 25, 0.94));
+  border-color: rgba(243, 220, 214, 0.09);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
 .overview .panel-card::after {
   content: "↗";
   position: absolute;
@@ -500,6 +519,12 @@ main {
   transform: translateY(-3px);
   border-color: rgba(163, 39, 57, 0.24);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.64), rgba(255, 252, 248, 0.42)), rgba(255, 252, 248, 0.84);
+}
+
+body.dark .overview .panel-card:hover,
+body.dark .overview .panel-card:focus-visible {
+  border-color: rgba(240, 108, 119, 0.24);
+  background: linear-gradient(180deg, rgba(53, 37, 42, 0.98), rgba(37, 25, 30, 0.96));
 }
 
 .overview .panel-card:hover::after,
@@ -521,6 +546,21 @@ main {
   max-width: 22ch;
   font-size: 0.88rem;
   color: color-mix(in srgb, var(--muted) 92%, var(--text) 8%);
+}
+
+body.dark .overview .panel-card h3,
+body.dark .section-grid-home .feature-card h2 {
+  color: #f7f0ec;
+}
+
+body.dark .overview .panel-card p,
+body.dark .section-grid-home .feature-card p {
+  color: rgba(240, 229, 224, 0.84);
+}
+
+body.dark .overview .panel-card::after,
+body.dark .section-grid-home .eyebrow {
+  color: rgba(240, 229, 224, 0.62);
 }
 
 body[data-page="upcoming"] .page-hero {
