@@ -412,6 +412,10 @@ main {
     var(--surface);
 }
 
+.upcoming-card--simple {
+  grid-template-columns: 1fr;
+}
+
 .upcoming-copy {
   min-width: 0;
 }
